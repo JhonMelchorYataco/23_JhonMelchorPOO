@@ -1,8 +1,8 @@
 public class Persona {
     // Atributos
-    private String nombre;
-    private int edad;
-    private char genero;
+     String nombre;
+     int edad;
+
 
     // Constructor
     public Persona(String nombre, int edad, char genero) {
@@ -11,10 +11,12 @@ public class Persona {
         this.genero = genero;
     }
 
-    // Método sin retorno ni parámetros
-    public void saludar() {
-        System.out.println("Hola, mi nombre es " + nombre);
+   // Métodos
+    public boolean num () {
+     return true;
     }
+     public void comer () {
+        System.out.println(comer);
 
     // Sobrecarga de método para saludar con un mensaje personalizado
     public void saludar(String mensaje) {
@@ -32,7 +34,7 @@ public class Persona {
         System.out.println("¡Feliz cumpleaños! Ahora tengo " + edad + " años.");
     }
 
-    // Otro método con parámetros y argumentos
+    // método con parámetros y argumentos
     public void cambiarNombre(String nuevoNombre) {
         nombre = nuevoNombre;
         System.out.println("Mi nombre ha sido cambiado a " + nombre);
